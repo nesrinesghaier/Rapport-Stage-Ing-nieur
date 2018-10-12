@@ -1,0 +1,82 @@
+
+%========= File containing the main LaTex document ========%
+%                                                          %
+% Copyright (C) ISI - All Rights Reserved                  %
+% Proprietary                                              %
+% Written by Med Hossam <med.hossam@gmail.com>, April 2016 %
+%                                                          %
+% @author: HEDHILI Med Houssemeddine                       %
+% @linkedin: http://tn.linkedin.com/in/medhossam           %
+%==========================================================%
+
+%\documentclass[pfe]{./tpl/isipfe}
+
+\newcommand{\Introduction}[1]{%
+  \chapter*{#1}
+  \addcontentsline{toc}{chapter}{#1}
+}
+\documentclass[]{./tpl/pfe}
+\usepackage{longtable}
+\usepackage{fancyhdr}
+\usepackage{ctable}
+\usepackage{colortbl}
+\usepackage{geometry}
+\usepackage{float}
+\usepackage{wrapfig}
+%\usepackage{hyperref}
+% @author: front
+% the command `\makeindex` is mandatory to create the index file main.idx
+% https://tex.stackexchange.com/questions/9913/input-index-file-not-found
+\makeindex
+
+\begin{document}
+    %\input{global_config.tex}
+    
+    \frontmatter
+       \input{tpl/garde.tex}
+        \input{remerciement.tex}
+        
+        \setcounter{page}{1}
+        \setcounter{secnumdepth}{2}
+        \setcounter{tocdepth}{2}
+        \dominitoc
+        \tableofcontents
+        \adjustmtc
+        \thispagestyle{frontmatter}
+        \listoffigures
+        \thispagestyle{frontmatter}
+        \listoftables
+        \thispagestyle{frontmatter}
+        
+       % \input{introduction.tex}
+    %    \thispagestyle{frontmatter}
+    
+    \mainmatter
+        \input{tpl/Fiche.tex}
+        \clearpage
+        
+        \input{introduction.tex}
+        \clearpage
+        
+        \input{chap_01}
+        \clearpage
+        
+        \input{chap_02}
+        \clearpage
+        
+        \input{chap_04}
+        \clearpage
+       
+        
+        \input{conclusion}
+        \clearpage
+        
+        % @author: 5misa
+		% the command `\nocite{*}` is mandatory to avoid the “no \citation commands” error
+        % https://tex.stackexchange.com/questions/18045/problem-with-compiling-bibtex-no-citation-commands-error
+        %\nocite{*}
+        \printbibliography[heading=bibintoc]
+        
+       % \input{annexes}
+
+\end{document}

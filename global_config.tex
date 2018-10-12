@@ -1,0 +1,88 @@
+
+%=== File containing Global Configuration of the report ===%
+%                                                          %
+% Copyright (C) ISI - All Rights Reserved                  %
+% Proprietary                                              %
+% Written by Med Hossam <med.hossam@gmail.com>, April 2016 %
+%                                                          %
+% @author: HEDHILI Med Houssemeddine                       %
+% @linkedin: http://tn.linkedin.com/in/medhossam           %
+%==========================================================%
+
+%=========== You MUST type your information here ==========%
+% global_config.tex file is designed to configure your     %
+% cover pages (main, back and black covers)                %
+%==========================================================%
+
+%============= Config new columns type ==============%
+\newcolumntype{L}{>{\raggedright\arraybackslash}}
+\newcolumntype{R}{>{\raggedleft\arraybackslash}}
+\newcolumntype{C}{>{\centering\arraybackslash}}
+%==================================================%
+
+%========= Config the cover section ==========%
+
+\title{Titre du projet}
+
+\author{Prénom NOM}
+%%% if necessary
+% Set isBinomal to true and type second author name
+%\setboolean{isBinomal}{true}
+%\secondAuthor{Prénom NOM}
+
+\diplomaName{Diplôme National d'Ingénieur en Sciences Appliquées et Technologiques}
+\speciality{Génie Logiciel et Systèmes d'Information}
+%\speciality{Génie des Télécommunications et Réseaux}
+%\speciality{Génie Informatique des Systèmes Industriels}
+
+%% Encadrant professionnel
+\proFramerName{Monsieur/Madame Prénom NOM}
+\proFramerSpeciality{Ingénieur R\&D}
+
+%% Encadrant académique
+\academicFramerName{Monsieur/Madame Prénom NOM}
+\academicFramerSpeciality{Maître Assistant(e)}
+
+%% Entreprise d'accueil
+\companyName{Tunisie Télécome}
+
+%% Année universitaire
+\collegeYear{2017 - 2018}
+
+%%%%%% Signatures section %%%%%%
+
+% You can simply remove theses sentences by typing an empty string
+% \proSignSentence{}
+
+\proSignSentence{J'autorise l'étudiante à faire le dépôt de son rapport de stage en vue d'une soutenance.}
+
+\academicSignSentence{J'autorise l'étudiante à faire le dépôt de son rapport de stage en vue d'une soutenance.}
+
+%%% AR
+\arabicAbstract{كجزء من تدريبنا الصيفي ، كانت مهمتنا هي تصميم وتطوير نموذج مولد في شكل دليل على المفهوم. سيتيح لنا هذا التطبيق إنشاء نماذج مخصصة ومصممة بشكل جيد وجاهزة للاندماج في تطبيقات الويب...}
+
+\arabicAbstractKeywords{إثبات المفهوم ، مولد النموذج}
+
+%% To use latin characters inside the arabic text
+% just put them inside the command \textLR{}
+%%%%
+
+%%% FR
+\frenchAbstract{Dans le cadre de notre stage d'été, nous avons eu comme mission la conception et le développement d'un générateur formulaire sous forme d'un POC. Cette application nous permettera de générer rapidement des formulaires bien conçus, personnalisé et prêts à être intégrés dans les applications web.}
+
+\frenchAbstractKeywords{ Preuve de concept, Générateur Formulaire }
+
+%%% EN
+\englishAbstract{As part of our summer internship, our mission was to design and develop a form generator in the form of a POC. This application will allow us to quickly generate well-designed, personalized forms ready to be integrated into web applications.}
+
+\englishAbstractKeywords{Proof of concept, Form Generator}
+
+%% if you want to get rid of the company address just set the boolean variable to false
+% PS : it's optional
+\setboolean{wantToTypeCompanyAddress}{false}
+
+\companyEmail{contact@company.com}
+\companyTel{71 190 195}
+\companyFax{71 222 222}
+\companyAddressAR{نهج بحيرة ملاران - ضفاف البحيرة - تونس}
+\companyAddressFR{Immeuble HERTZ, Borj Louizir, Ariana}
